@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/babel-cli/bin/babel-node.js ./node_modules/mocha/bin/_mocha tests/**/*.spec.js",
-    "test-cov": "node ./node_modules/babel-cli/bin/babel-node.js ./node_modules/isparta/bin/isparta cover --report text --report html ./node_modules/mocha/bin/_mocha  -- --reporter dot tests/**/*.spec.js"
+    "test-cov": "node ./node_modules/babel-cli/bin/babel-node.js ./node_modules/isparta/bin/isparta cover --report lcov --report text --report html ./node_modules/mocha/bin/_mocha  -- --reporter dot tests/**/*.spec.js",
+    "test-travis": "node ./node_modules/babel-cli/bin/babel-node.js ./node_modules/isparta/bin/isparta cover --report lcov ./node_modules/mocha/bin/_mocha  -- --reporter dot tests/**/*.spec.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
     "service",
