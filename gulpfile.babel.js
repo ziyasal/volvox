@@ -1,4 +1,4 @@
-import gulp from 'gulp'; // ES6 imports!
+import gulp from 'gulp';
 
 gulp.task('default', ()=> {
     console.log("ES6 TASK");

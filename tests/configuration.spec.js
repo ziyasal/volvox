@@ -2,7 +2,8 @@ import "babel-polyfill";
 
 import chai from "chai";
 import sinon from "sinon";
-import Configuration from "../lib/configuration";
+
+import {Configuration} from "../index";
 
 import uriValidator from 'valid-url';
 
@@ -10,11 +11,19 @@ chai.should();
 
 describe("Configuration:", () => {
     let configuration, result = null;
-    describe("#getUri", () => {
 
-        before(() => {
-            configuration = new Configuration();
+    beforeEach(() => {
+        configuration = new Configuration();
+    });
+
+    describe("#ctor", () => {
+
+        it("should create instance.", ()=> {
+            (!!configuration).should.be.equal(true);
         });
+    });
+
+    describe("#getUri", () => {
 
         it("should return uri.", async ()=> {
             result = await configuration.getUri();
@@ -22,14 +31,8 @@ describe("Configuration:", () => {
         });
 
         it("should return available port.", async ()=> {
-            result = await configuration.port();
+            result = await configuration.getPort();
             result.should.be.at.least(0);
-        });
-
-        it("should throw.", ()=> {
-            (()=> {
-                throw  new Error();
-            }).should.throw(Error);
         });
     });
 });
