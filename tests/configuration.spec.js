@@ -5,7 +5,7 @@ import sinon from "sinon";
 
 import {Configuration} from "../index";
 
-import uriValidator from 'valid-url';
+import validator from 'validator';
 
 chai.should();
 
@@ -27,7 +27,7 @@ describe("Configuration:", () => {
 
         it("should return uri.", async ()=> {
             result = await configuration.getUri();
-            (!!uriValidator.isUri(result)).should.be.true;
+            validator.isURL(result).should.be.true;
         });
 
         it("should return available port.", async ()=> {
