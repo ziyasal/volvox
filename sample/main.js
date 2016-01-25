@@ -1,6 +1,6 @@
 import "babel-polyfill";
 
-import {Configuration} from '../index';
+import {Configuration} from '../src/index';
 
 async function main() {
     try {

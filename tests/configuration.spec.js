@@ -3,7 +3,7 @@ import "babel-polyfill";
 import chai from "chai";
 import sinon from "sinon";
 
-import {Configuration} from "../index";
+import {Configuration} from "../src/index";
 
 import validator from 'validator';
 

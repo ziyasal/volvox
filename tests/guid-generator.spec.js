@@ -2,7 +2,7 @@ import "babel-polyfill";
 
 import chai from "chai";
 import validator from 'validator';
-import {GuidGenerator} from "../index";
+import {GuidGenerator} from "../src/index";
 
 
 chai.should();

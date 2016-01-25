@@ -2,7 +2,7 @@ import "babel-polyfill";
 
 import chai from "chai";
 
-import {FrameworkProvider} from "../index";
+import {FrameworkProvider} from "../src/index";
 
 
 chai.should();

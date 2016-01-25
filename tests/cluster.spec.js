@@ -3,7 +3,7 @@ import "babel-polyfill";
 import chai from "chai";
 import sinon from "sinon";
 
-import {Cluster, ServiceInformation} from "../index";
+import {Cluster, ServiceInformation} from "../src/index";
 
 
 chai.should();
