@@ -18,6 +18,10 @@
   ],
   "author": "ziyasal <sarikayaziyagmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microphonejs/microphone-core.git"
+  },
   "dependencies": {
     "node-uuid": "^1.4.7",
     "portfinder": "^0.4.0",
