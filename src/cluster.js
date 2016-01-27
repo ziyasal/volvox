@@ -20,8 +20,8 @@ export default class Cluster {
         await this._clusterProvider.bootstrapClientAsync();
     }
 
-    async bootstrap(serviceName, version) {
-        var uri = this._frameworkProvider.start(serviceName, version);
+    async bootstrap(server, serviceName, version) {
+        var uri = this._frameworkProvider.start(server, serviceName, version);
         var serviceId = serviceName + this._guidGenerator.newGuid();
         await this._clusterProvider.registerServiceAsync(serviceName, serviceId, version, uri);
     }

@@ -99,10 +99,11 @@ describe("Cluster:", () => {
             let serviceName = "test", version = "v1",
                 guid = "4e6605c7-bf83-4513-9fd5-d975314d8e52",
                 serviceId = serviceName + guid,
-                uri = "http://localhost:666/api/v1/bla";
+                uri = "http://localhost:666/api/v1/bla",
+                server = null;
 
             frameworkProviderMock.expects('start')
-                .withArgs(serviceName, version)
+                .withArgs(server, serviceName, version)
                 .returns(uri)
                 .once();
 
@@ -112,7 +113,7 @@ describe("Cluster:", () => {
                 .withArgs(serviceName, serviceId, version, uri)
                 .once();
 
-            await cluster.bootstrap(serviceName, version);
+            await cluster.bootstrap(null, serviceName, version);
         });
     });
 
