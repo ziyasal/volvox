@@ -1,6 +1,6 @@
 {
   "name": "microphone-core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Microservice framework with powerful service discovery using Consul or ETCD",
   "main": "lib/index.js",
   "scripts": {
