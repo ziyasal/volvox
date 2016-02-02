@@ -1,4 +1,4 @@
-# microphone-core
+# microphone - Self announcing services
 ![](https://avatars3.githubusercontent.com/u/16361502?v=3&s=200)  
 
 Microservice framework with powerful service discovery using Consul or ETCD

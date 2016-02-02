@@ -4,6 +4,7 @@ import ServiceInformation from './service-information';
 import FrameworkProvider from './framework-provider';
 
 import GuidGenerator from './util/guid-generator';
+import RandomProvider from './util/random-provider';
 import ClusterProvider from './cluster-providers/cluster-provider';
 
 export {
@@ -12,5 +13,6 @@ export {
     ServiceInformation,
     FrameworkProvider,
     ClusterProvider,
-    GuidGenerator
+    GuidGenerator,
+    RandomProvider
 };
