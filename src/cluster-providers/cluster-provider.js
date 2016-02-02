@@ -1,4 +1,7 @@
 export default class ClusterProvider {
+    constructor(randomProvider) {
+        this._randomProvider = randomProvider;
+    }
 
     async findServiceInstancesAsync(name) {
         return new Promise((resove, reject)=> {
@@ -25,6 +28,6 @@ export default class ClusterProvider {
 
         console.log(res);
         //TODO: Thread Local Random
-        return res[res.length];
+        return res[this._randomProvider.next(0, res.length)];
     }
 }
