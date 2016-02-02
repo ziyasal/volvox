@@ -23,6 +23,7 @@ export default class ClusterProvider {
         if (res.length === 0)
             throw new Error("Could not find service");
 
+        console.log(res);
         //TODO: Thread Local Random
         return res[res.length];
     }
