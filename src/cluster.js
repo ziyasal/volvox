@@ -1,5 +1,6 @@
-import Guid from './util/guid-generator'
-
+/**
+ * 
+ */
 export default class Cluster {
 
     /**
