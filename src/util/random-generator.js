@@ -1,7 +1,7 @@
 /**
  *Provides random number between given numbers
  */
-export default class RandomProvider {
+export default class RandomGenerator {
     /**
      *
      * @param low {Number}

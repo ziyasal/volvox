@@ -1,7 +1,7 @@
 export default class ClusterProvider {
     /**
      *
-     * @param randomProvider {RandomProvider}
+     * @param randomProvider {RandomGenerator}
      */
     constructor(randomProvider) {
         this._randomProvider = randomProvider;
