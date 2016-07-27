@@ -1,4 +1,4 @@
-import Cluster from './cluster';
+import Volvox from './volvox';
 import Configuration from './configuration';
 import ServiceInformation from './service-information';
 import FrameworkProvider from './framework-provider';
@@ -8,7 +8,7 @@ import RandomGenerator from './util/random-generator';
 import ClusterProvider from './cluster-providers/cluster-provider';
 
 export {
-    Cluster,
+    Volvox,
     Configuration,
     ServiceInformation,
     FrameworkProvider,

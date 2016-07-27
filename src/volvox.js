@@ -1,7 +1,7 @@
 /**
  *
  */
-export default class Cluster {
+export default class Volvox {
 
     /**
      *
