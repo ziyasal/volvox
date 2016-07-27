@@ -19,21 +19,17 @@ import vexpress from 'volvox-express';
 import express from 'express'
 
 async function main() {
-    try {
-        let server = express();
+    let server = express();
 
-        server.get('/customers', (req, res) => {
-            res.send({
-                customerName: "Test customer",
-                customerId: 666
-            });
+    server.get('/customers', (req, res) => {
+       res.send({
+            customerName: "Test customer",
+            customerId: 666
         });
+    });
 
-        let volvox = new Volvox(vconsul(), vexpress());
-        await volvox.bootstrap(server, "customers", "v1");
-    } catch (error) {
-        console.error(error);
-    }
+    let volvox = new Volvox(vconsul(), vexpress());
+    await volvox.bootstrap(server, "customers", "v1");
 }
 
 main();
