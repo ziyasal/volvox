@@ -12,7 +12,7 @@ Volvox.js simple framework with powerful service discovery using [Consul](https:
 ### Here is sample code shows [express.js](https://expressjs.com/) and [Consul](https://www.consul.io/) integration
 
 ```js
-import {Volvox} from 'volvox-core';
+import Volvox from 'volvox-core';
 import vconsul from 'volvox-consul';
 import vexpress from 'volvox-express';
 
