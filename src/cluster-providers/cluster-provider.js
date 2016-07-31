@@ -1,10 +1,10 @@
 export default class ClusterProvider {
     /**
      *
-     * @param randomProvider {RandomGenerator}
+     * @param randomGenerator {RandomGenerator}
      */
-    constructor(randomProvider) {
-        this._randomProvider = randomProvider;
+    constructor(randomGenerator) {
+        this._randomGenerator = randomGenerator;
     }
 
     /**
@@ -53,6 +53,6 @@ export default class ClusterProvider {
             throw new Error("Could not find service");
 
         //INFO: Thread Local Random
-        return res[this._randomProvider.next(0, res.length)];
+        return res[this._randomGenerator.next(0, res.length)];
     }
 }

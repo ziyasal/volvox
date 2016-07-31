@@ -7,7 +7,7 @@ import {RandomGenerator} from "../src/index";
 
 chai.should();
 
-describe("GuidGenerator:", () => {
+describe("RandomGenerator:", () => {
     let randomGenerator;
 
     beforeEach(() => {

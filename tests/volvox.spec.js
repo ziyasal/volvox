@@ -3,7 +3,7 @@ import "babel-polyfill";
 import chai from "chai";
 import sinon from "sinon";
 
-import {Volvox, ServiceInformation} from "../src/index";
+import Volvox, {ServiceInformation} from "../src/index";
 
 
 chai.should();

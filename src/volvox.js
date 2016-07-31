@@ -1,3 +1,6 @@
+
+import GuidGenerator from './util/guid-generator'
+
 /**
  *
  */
@@ -12,7 +15,7 @@ export default class Volvox {
     constructor(clusterProvider, frameworkProvider, guidGenerator) {
         this._clusterProvider = clusterProvider;
         this._frameworkProvider = frameworkProvider;
-        this._guidGenerator = guidGenerator;
+        this._guidGenerator = guidGenerator || new GuidGenerator(); //TODO: refactor later on!
     }
 
     /**
