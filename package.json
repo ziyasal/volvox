@@ -1,6 +1,6 @@
 {
   "name": "volvox-core",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Microservice framework with powerful service discovery using Consul or ETCD",
   "main": "lib/index.js",
   "scripts": {
@@ -36,8 +36,7 @@
   "dependencies": {
     "node-uuid": "^1.4.7",
     "portfinder": "^0.4.0",
-    "request": "^2.67.0",
-    "winston": "^2.1.1"
+    "request": "^2.67.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
