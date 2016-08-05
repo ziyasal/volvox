@@ -5,7 +5,7 @@ import FrameworkProvider from './framework-provider'
 
 import GuidGenerator from './util/guid-generator'
 import RandomGenerator from './util/random-generator'
-import ClusterProvider from './cluster-providers/cluster-provider'
+import ClusterProvider from './cluster-provider'
 
 export default Volvox
 
