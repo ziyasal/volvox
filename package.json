@@ -34,9 +34,9 @@
     "url": "https://github.com/microphonejs/microphone-core.git"
   },
   "dependencies": {
-    "node-uuid": "^1.4.7",
     "portfinder": "^0.4.0",
-    "request": "^2.67.0"
+    "request": "^2.67.0",
+    "uuid": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
