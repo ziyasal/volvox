@@ -51,8 +51,6 @@ export default class ClusterProvider {
         var res = await this.findServiceInstancesAsync(serviceName);
         if (res.length === 0)
             throw new Error("Could not find service");
-
-        //INFO: Thread Local Random
         return res[this._randomGenerator.next(0, res.length)];
     }
 }
