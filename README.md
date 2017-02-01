@@ -1,7 +1,7 @@
 # volvox.js - Self announcing services
 ![](https://avatars3.githubusercontent.com/u/16361502?v=3&s=200)  
 
-Volvox.js simple framework with powerful service discovery using [Consul](https://www.consul.io/) or [ETCD](https://coreos.com/etcd/)
+Volvox.js simple framework with powerful service discovery using [Consul](https://www.consul.io/)
 
 [![Build Status](https://travis-ci.org/volvoxjs/volvox-core.svg?branch=master)](https://travis-ci.org/volvoxjs/volvox-core) [![Coverage Status](https://coveralls.io/repos/github/volvoxjs/volvox-core/badge.svg?branch=master)](https://coveralls.io/github/volvoxjs/volvox-core?branch=master)
 
