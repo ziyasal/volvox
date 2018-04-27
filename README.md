@@ -8,6 +8,8 @@ Volvox.js simple framework with powerful service discovery using [Consul](https:
 > Just develop your app using your favorite framework Express, Hapi, Restify etc then **Volvox.js** takes care of the rest. It starts application on available port registers application to **[Consul](https://www.consul.io/)**. **volvox.js** provides **/status** endpoint for [Consul Health Checks](https://www.consul.io/intro/getting-started/checks.html).
 ![](https://raw.githubusercontent.com/microphonejs/microphone-core/master/misc/microphone-consul-fabio.png)  
 
+**Moved:** https://github.com/volvoxjs
+
 ### Here is sample code shows [express.js](https://expressjs.com/) and [Consul](https://www.consul.io/) integration
 
 ```js
